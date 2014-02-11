@@ -1,0 +1,5 @@
+<script src="<%= assetsRootpath %>js/lib/jquery.js"></script>
+<script src="<%= assetsRootpath %>js/lib/angular.js"></script><%
+_.forEach(grunt.file.expand(grunt.config('uglify.app.src')), function(path) { %>
+<script src="<%= assetsRootpath + path.replace(assetsBasepath, '') %>"></script><%
+}); %>

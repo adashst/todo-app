@@ -1,0 +1,12 @@
+{
+	"templates": {
+		"options": {
+			"removeComments": true,
+			"collapseWhitespace": true
+		},
+		"expand": true,
+		"cwd": "<%= options.templatesBasepath %>",
+		"src": ["**/*.html"],
+		"dest": "<%= options.templatesMinifiedBasepath %>"
+	}
+}

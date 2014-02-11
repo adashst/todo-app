@@ -1,0 +1,36 @@
+{
+    "app": {
+	    "options": {
+	    	"sourceMapPrefix": 3
+	    },
+	    "src": [
+			"public/static/js/lib/angular-route.js",
+			"public/static/js/lib/angular-sanitize.js",
+			"public/static/js/lib/angular-animate.js",
+			"public/static/js/lib/angular-touch.js",
+			"public/static/js/lib/angular-cookies.js",
+			"public/static/js/lib/ui.bootstrap.position.js",
+			"public/static/js/lib/ui.bootstrap.tooltip.js",
+			"public/static/js/lib/ui.bootstrap.dropdown.js",
+			"public/static/js/lib/jquery.ui.widget.js",
+			"public/static/js/lib/jquery.fileupload.js",
+			"public/static/js/lib/jquery.fileupload-process.js",
+			"public/static/js/lib/jquery.fileupload-validate.js",
+			"public/static/js/lib/jquery.fileupload-image.js",
+			"public/static/js/lib/jquery.fileupload-angular.js",
+			"public/static/js/lib/jquery.iframe-transport.js",
+			"public/static/js/app/**/*.js"
+        ],
+	    "dest": "public/static/js/app.min.js"
+    },
+    "locales": {
+	    "options": {
+	    	"sourceMapPrefix": 5
+	    },
+		"expand": true,
+		"cwd": "public/static/js/locale",
+		"src": ["**/i18n.js"],
+		"dest": "public/static/js/locale",
+		"ext": ".min.js"
+    }
+}

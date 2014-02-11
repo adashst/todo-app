@@ -1,0 +1,6 @@
+{
+	"production": {
+		"src": "<%= options.assetsBasepath %>",
+		"dest": "<%= options.versionsBasepath + pkg.version %>"
+	}
+}

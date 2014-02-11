@@ -1,0 +1,82 @@
+{
+	"html5shiv": {
+        "src": "bower_components/html5shiv/dist/html5shiv.js",
+        "dest": "public/static/js/html5shiv.js"
+	},
+	"jquery-legacy": {
+        "src": "bower_components/jquery-legacy/jquery.js",
+        "dest": "public/static/js/lib/jquery-legacy.js"
+	},
+	"jquery-legacy-min": {
+        "src": "bower_components/jquery-legacy/jquery.min.js",
+        "dest": "public/static/js/jquery-legacy.min.js"
+	},
+	"jquery": {
+        "src": "bower_components/jquery/jquery.js",
+        "dest": "public/static/js/lib/jquery.js"
+	},
+	"jquery-min": {
+        "src": "bower_components/jquery/jquery.min.js",
+        "dest": "public/static/js/jquery.min.js"
+	},
+	"bootstrap": {
+		"expand": true,
+		"cwd": "bower_components/bootstrap/less/",
+		"src": "*.less",
+		"dest": "public/static/less/bootstrap/"
+	},
+	"font-awesome-less": {
+		"expand": true,
+		"cwd": "bower_components/font-awesome/less/",
+		"src": "*.less",
+		"dest": "public/static/less/font-awesome/"
+	},
+	"font-awesome-fonts": {
+		"expand": true,
+		"cwd": "bower_components/font-awesome/fonts/",
+		"src": "*.*",
+		"dest": "public/static/fonts/"
+	},
+	"angular": {
+        "src": "bower_components/angular/angular.js",
+        "dest": "public/static/js/lib/angular.js"
+	},
+	"angular-min": {
+        "src": "bower_components/angular/angular.min.js",
+        "dest": "public/static/js/angular.min.js"
+	},
+	"angular-i18n": {
+		"expand": true,
+		"cwd": "bower_components/angular-i18n/",
+		"src": "*.js",
+		"dest": "public/static/js/lib/angular-i18n/"
+	},
+	"angular-route": {
+        "src": "bower_components/angular-route/angular-route.js",
+        "dest": "public/static/js/lib/angular-route.js"
+	},
+	"angular-sanitize": {
+        "src": "bower_components/angular-sanitize/angular-sanitize.js",
+        "dest": "public/static/js/lib/angular-sanitize.js"
+	},
+	"angular-animate": {
+        "src": "bower_components/angular-animate/angular-animate.js",
+        "dest": "public/static/js/lib/angular-animate.js"
+	},
+	"angular-touch": {
+        "src": "bower_components/angular-touch/angular-touch.js",
+        "dest": "public/static/js/lib/angular-touch.js"
+	},
+	"angular-cookies": {
+        "src": "bower_components/angular-cookies/angular-cookies.js",
+        "dest": "public/static/js/lib/angular-cookies.js"
+	},
+	"angular-mocks": {
+        "src": "bower_components/angular-mocks/angular-mocks.js",
+        "dest": "public/test/lib/angular/angular-mocks.js"
+	},
+	"angular-scenario": {
+        "src": "bower_components/angular-scenario/angular-scenario.js",
+        "dest": "public/test/lib/angular/angular-scenario.js"
+	}
+}

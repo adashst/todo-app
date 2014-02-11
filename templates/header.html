@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en" data-ng-app="myTodo">
+<head>
+  <meta charset="utf-8">
+  <title>My AngularJS App</title>
+  <link rel="stylesheet" href="<%= assetsRootpath %>css/app.css"/>
+</head>
+<body>
+  <div>Version: <span app-version></span></div>
+  <div id="view-container"><div data-ng-view id="view"></div></div>
+  <div id="locale-url" data-url="<%= assetsRootpath %>js/locale/{locale}/i18n<%= extensionPrefix %>.js"></div>

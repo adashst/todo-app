@@ -1,0 +1,12 @@
+{
+	"options": {
+		"jshintrc": ".jshintrc"
+	},
+    "all": [
+        "Gruntfile.js",
+        "tasks/*.js",
+        "public/static/js/app/**/*.js",
+        "public/test/unit/**/*.js",
+        "public/test/e2e/**/*.js"
+    ]
+}

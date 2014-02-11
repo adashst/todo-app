@@ -1,0 +1,25 @@
+{
+  "name": "achims-todo-app",
+  "version": "0.0.1",
+  "title": "Achim`s ToDo App",
+  "description": "A simple application to get in touch with angular and angular testing, bower, grunt and bootstrap",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:aausstm/todo-app.git"
+  },
+  "private": true,
+  "devDependencies": {
+    "jquery": "2.0.3",
+    "bootstrap": "3.1.0",
+    "font-awesome": "4.0.3",
+    "angular": "1.2.11",
+    "angular-i18n": "1.2.11",
+    "angular-route": "1.2.11",
+    "angular-sanitize": "1.2.11",
+    "angular-animate": "1.2.11",
+    "angular-touch": "1.2.11",
+    "angular-cookies": "1.2.11",
+    "angular-mocks": "1.2.11",
+    "angular-scenario": "1.2.11"
+  }
+}

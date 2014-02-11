@@ -1,0 +1,12 @@
+{
+    "development": {
+        "options": {
+            "sourceMap": true,
+            "sourceMapFilename": "public/static/css/app.css.map",
+            "sourceMapBasepath": "public/static/",
+            "sourceMapRootpath": "../"
+        },
+        "src": "public/static/less/app.less",
+        "dest": "public/static/css/app.css"
+    }
+}

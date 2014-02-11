@@ -1,0 +1,33 @@
+{
+	"options": {
+		"localizeAttributes": [
+	        "localize",
+	        "localize-title",
+	        "localize-page-title",
+	        "localize-popover",
+	        "localize-popover-title",
+	        "localize-dialog",
+	        "localize-dialog-title",
+	        "localize-errors-title",
+	        "localize-flash"
+	    ],
+	    "defaultMessagesSource": "<%= options.localesBasepath %>*.json",
+	    "htmlminKeys": true
+	},
+	"update": {
+		"src": "<%= options.templatesBasepath %>**/*.html",
+		"dest": "<%= options.localesBasepath %>{locale}/i18n.json"
+	},
+	"build": {
+		"src": "<%= options.localesBasepath %>**/i18n.json",
+		"dest": "<%= options.localesBasepath %>{locale}/i18n.lib.js"
+	},
+	"export": {
+		"src": "<%= options.localesBasepath %>**/i18n.json",
+		"dest": "<%= options.localesBasepath %>locales.csv"
+	},
+	"import": {
+		"src": "<%= options.localesBasepath %>locales.csv",
+		"dest": "<%= options.localesBasepath %>{locale}/i18n.json"
+	}
+}

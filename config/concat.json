@@ -1,0 +1,25 @@
+{
+    "development": {
+        "options": {
+            "process": {
+                "data": {
+                    "rootPath": "<%= options.rootPath %>",
+                    "assetsBasepath": "<%= options.assetsBasepath %>",
+                    "assetsRootpath": "<%= options.rootPath %>static/",
+                    "extensionPrefix": "",
+                    "manifest": ""
+                }
+            },
+            "separator": ""
+        },
+        "src": [
+            "templates/header.html",
+            "templates/application.html",
+            "templates/footer.html"
+        ],
+        "dest": "public/index.html"
+    },
+    "locales": {
+        "files": []
+    }
+}

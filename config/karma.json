@@ -1,0 +1,43 @@
+{
+	"options": {
+		"browsers": ["Chrome", "Firefox", "Opera"]
+	},
+	"e2e": {
+		"options": {
+			"files": [
+				"public/test/e2e/**/*.js"
+			]
+		},
+		"frameworks": ["ng-scenario"],
+		"urlRoot": "/test/e2e/",
+		"proxies": {
+			"/": "http://localhost.todo.com:8000/"
+		},
+		"singleRun": true
+	},
+	"coverage": {
+		"options": {
+			"files": [
+				"public/test/lib/angular/angular-mocks.js",
+				"public/test/unit/**/*.js"
+			],
+			"browsers": ["Chrome"]
+		},
+		"frameworks": ["jasmine"],
+		"autoWatch": true,
+		"reporters": ["progress", "coverage"],
+		"preprocessors": {
+			"public/static/js/app/**/*.js": ["coverage"]
+		}
+	},
+	"unit": {
+		"options": {
+			"files": [
+				"public/test/lib/angular/angular-mocks.js",
+				"public/test/unit/**/*.js"
+			]
+		},
+		"frameworks": ["jasmine"],
+		"autoWatch": true
+	}
+}

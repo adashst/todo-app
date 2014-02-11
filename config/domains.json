@@ -1,0 +1,20 @@
+{
+	"requiresTasks": [
+		"htmlmin:templates"
+	],
+	"runTasks": [
+        "concat:development",
+        "concat:production",
+        "less:development",
+        "less:production"
+	],
+	"setConfig": [
+		{
+			"key": "options.domainSuffix",
+			"value": "-{domain}"
+		}
+	],
+	"list": [
+		"demo"
+	]
+}

@@ -1,0 +1,12 @@
+{
+    "rootPath": "/",
+    "versionsBasepath": "public/versions/",
+    "assetsBasepath": "public/static/",
+    "assetsRootpath": "public/static/",
+    "manifest": true,
+    "extensionPrefix": ".min",
+    "templatesMinifiedBasepath": "tmp/templates/",
+    "templatesBasepath": "public/static/templates/",
+    "templatesRootpath": "/static/templates/",
+    "localesBasepath": "public/static/js/locale/"
+}

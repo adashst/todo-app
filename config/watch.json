@@ -1,0 +1,17 @@
+{
+	"less": {
+		"files": "<%= options.assetsBasepath %>less/**/*.less",
+		"tasks": ["less:development"]
+	},
+	"templates": {
+		"options": {
+			"spawn": false
+		},
+		"files": "<%= options.templatesBasepath %>**/*.html",
+		"tasks": ["locales:update", "locales:build", "concat:locales"]
+	},
+	"locales": {
+		"files": "<%= options.localesBasepath %>**/i18n.json",
+		"tasks": ["locales:build", "concat:locales"]
+	}
+}

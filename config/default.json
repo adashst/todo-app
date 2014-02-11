@@ -1,0 +1,13 @@
+[
+    "jshint",
+    "copy",
+    "htmlmin",
+    "write-locale-codes",
+    "locales:update",
+    "locales:build",
+    "locales:export",
+    "concat",
+    "less",
+    "uglify",
+    "clean"
+]
