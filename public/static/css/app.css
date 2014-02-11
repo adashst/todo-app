@@ -4142,13 +4142,16 @@ td.visible-print {
     transform: rotate(359deg);
   }
 }
+ul.list button > span {
+  display: none;
+}
 .trash:after {
   font-family: FontAwesome;
   content: "\f014";
 }
-.search:after {
+.preview:after {
   font-family: FontAwesome;
-  content: "\f002";
+  content: "\f06e";
 }
 .ok:after {
   font-family: FontAwesome;

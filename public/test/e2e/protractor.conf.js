@@ -14,7 +14,9 @@ exports.config = {
     // Spec patterns are relative to the current working directly when
     // protractor is called.
     specs: [
-        './**/*Spec.js'
+//        './**/*Spec.js'
+        './**/todoListSpec.js',
+        './**/todoDetailSpec.js'
     ],
 
     // Options to be passed to Jasmine-node.
