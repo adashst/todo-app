@@ -1,4 +1,5 @@
-<div id="todo">
+<div class="well">
     <a href="#todos">return to list</a>
-    <div class="well"><h2>{{todo.key}}{{todoId}}</h2></div>
+    <div>{{todo.createDate | filter:date}}</div>
+    <h1>{{todo.key}}{{todoId}}</h1>
 </div>

@@ -3,23 +3,21 @@ ul.list button > span {
     display: none;
 }
 
-.trash {
+button {
+  &.trash {
     &:after {
-        font-family: FontAwesome;
-        content: @fa-var-trash-o;
+      .icon(@fa-var-trash-o);
     }
-}
-
-.preview {
+  }
+  &.show {
     &:after {
-        font-family: FontAwesome;
-        content: @fa-var-eye;
+      .icon(@fa-var-eye);
     }
+  }
 }
 
 .ok {
-    &:after {
-        font-family: FontAwesome;
-        content: @fa-var-check;
-    }
+  &:after {
+    .icon(@fa-var-check);
+  }
 }

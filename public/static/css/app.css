@@ -4145,16 +4145,22 @@ td.visible-print {
 ul.list button > span {
   display: none;
 }
-.trash:after {
+button.trash:after {
   font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   content: "\f014";
 }
-.preview:after {
+button.show:after {
   font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   content: "\f06e";
 }
 .ok:after {
   font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   content: "\f00c";
 }
 /*# sourceMappingURL=../css/app.css.map */
