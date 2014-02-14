@@ -5,8 +5,8 @@
   <title>My AngularJS App</title>
   <link rel="stylesheet" href="/static/css/app.css"/>
 </head>
-<body>
-  <div>Version: <span app-version></span></div>
+<body ng-controller="frameCtrl">
+  <div>Version: <span app-version></span> <span>{{today | filter:date}}</span></div>
   <div id="view-container"><div data-ng-view id="view"></div></div>
   <div id="locale-url" data-url="/static/js/locale/{locale}/i18n.js"></div>
 <script src="/static/js/lib/jquery.js"></script>

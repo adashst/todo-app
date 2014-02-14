@@ -4,11 +4,12 @@
     <button name="submit" ng-click="clearStorage()" class="reset"><span>reset storage</span></button>
     <ul class="list-unstyled">
         <li ng-repeat="todo in todos | filter: newtodo" ng-switch on="todo.status" class="unstyled well">
-            <a href="#/todos/{{todo.key}}" class="detail">{{todo.key}}</a>
-            <button ng-switch-default ng-click="doneTodo(todo.key)" class="alert alert-info search"></button>
+            <div>{{todo.createDate | filter:date}}</div>
+            <h2><a href="#/todos/{{todo.key}}" class="detail">{{todo.key}}</a></h2>
+            <button ng-switch-default ng-click="doneTodo(todo.key)" class="alert alert-info show"></button>
             <span ng-switch-when="done">
                 <span class="alert alert-success ok"></span>
-                <button ng-click="removeTodo(todo.key)" class="alert alert-danger trash">{{todo.key}}</button>
+                <button ng-click="removeTodo(todo.key)" class="alert alert-danger trash"><span>{{todo.key}}</span></button>
             </span>
         </li>
     </ul>

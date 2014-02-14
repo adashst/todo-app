@@ -5,6 +5,10 @@
 
     angular.module('myTodo.controllers', [])
 
+        .controller('frameCtrl', ['$scope', function ($scope) {
+            $scope.today = new Date();
+        }])
+
         .controller('todoListCtrl', [
             '$scope', '$location', '$window',
             function ($scope, $location, $window) {
@@ -17,7 +21,11 @@
 
                 $scope.addTodo = function () {
                     if (!!$scope.newtodo) {
-                        $scope.todos.push({key: $scope.newtodo, status: 'undone'});
+                        $scope.todos.push({
+                            key: $scope.newtodo,
+                            status: 'undone',
+                            createDate: Date()
+                        });
                         $scope.newtodo = '';
                         setStorage();
                     }

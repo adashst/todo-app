@@ -4142,16 +4142,25 @@ td.visible-print {
     transform: rotate(359deg);
   }
 }
-.trash:after {
+button.trash span {
+  display: none;
+}
+button.trash:after {
   font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   content: "\f014";
 }
-.search:after {
+button.show:after {
   font-family: FontAwesome;
-  content: "\f002";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f06e";
 }
 .ok:after {
   font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   content: "\f00c";
 }
 /*# sourceMappingURL=../css/app.css.map */

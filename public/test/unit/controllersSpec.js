@@ -17,6 +17,17 @@
             }
         ));
 
+        describe('frameController', function () {
+            it('should define today date', inject(
+                function ($controller) {
+                    $controller('frameCtrl', {
+                        $scope: scope
+                    });
+                    expect(scope.today).toBeDefined();
+                }
+            ));
+        });
+
         describe('todoController', function () {
 
             beforeEach(inject(
@@ -49,6 +60,7 @@
                 scope.newtodo = 'task1';
                 scope.addTodo();
                 expect(scope.todos[0].key).toEqual('task1');
+                expect(scope.todos[0].createDate).toBeDefined();
                 expect(scope.newtodo).toEqual('');
             });
 
@@ -120,13 +132,14 @@
 
             it('should load the todo if given key is found', inject(
                 function ($controller, $window) {
-                    scope.todos = [{key: 'task2', status: 'undone'}];
+                    scope.todos = [{key: 'task2', status: 'undone', createDate: '2014-02-14'}];
                     $window.localStorage.setItem(toDoListId, angular.toJson(scope.todos));
                     $controller('todoDetailCtrl', {
                             $scope: scope,
                             $routeParams: {todoId: 'task2'}
                         });
                     expect(scope.todo.key).toEqual('task2');
+                    expect(scope.todo.createDate).toEqual('2014-02-14');
                 }
             ));
 

@@ -1,21 +1,22 @@
 
-.trash {
-    &:after {
-        font-family: FontAwesome;
-        content: @fa-var-trash-o;
+button {
+  &.trash {
+    span {
+      display: none;
     }
-}
-
-.search {
     &:after {
-        font-family: FontAwesome;
-        content: @fa-var-search;
+      .icon(@fa-var-trash-o);
     }
+  }
+  &.show {
+    &:after {
+      .icon(@fa-var-eye);
+    }
+  }
 }
 
 .ok {
-    &:after {
-        font-family: FontAwesome;
-        content: @fa-var-check;
-    }
+  &:after {
+    .icon(@fa-var-check);
+  }
 }
