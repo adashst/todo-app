@@ -1,25 +1,26 @@
 <!doctype html>
-<html lang="en" data-ng-app="myTodo">
+<html lang="en" data-ng-app="myTodo" data-ng-controller="appCtrl">
 <head>
-  <meta charset="utf-8">
-  <title>My AngularJS App</title>
-  <link rel="stylesheet" href="/static/css/app.css"/>
+    <meta charset="utf-8">
+    <title>My AngularJS App</title>
+    <link rel="stylesheet" href="/static/css/app.css"/>
 </head>
-<body ng-controller="frameCtrl">
-  <div>Version: <span app-version></span> <span>{{today | filter:date}}</span></div>
-  <div id="view-container"><div data-ng-view id="view"></div></div>
-  <div id="locale-url" data-url="/static/js/locale/{locale}/i18n.js"></div>
-<script src="/static/js/lib/jquery.js"></script>
-<script src="/static/js/lib/angular.js"></script>
-<script src="/static/js/lib/angular-route.js"></script>
-<script src="/static/js/lib/angular-sanitize.js"></script>
-<script src="/static/js/lib/angular-animate.js"></script>
-<script src="/static/js/lib/angular-touch.js"></script>
-<script src="/static/js/lib/angular-cookies.js"></script>
-<script src="/static/js/app/app.js"></script>
-<script src="/static/js/app/controllers.js"></script>
-<script src="/static/js/app/directives.js"></script>
-<script src="/static/js/app/filters.js"></script>
-<script src="/static/js/app/services.js"></script>
+<body>
+    <header data-ng-include="header()"></header>
+    <div id="view-container" class="container" data-ng-view id="view"></div>
+    <footer data-ng-include="footer()"></footer>
+    <div id="locale-url" data-url="/static/js/locale/{locale}/i18n.js"></div>
+    <script src="/static/js/lib/jquery.js"></script>
+    <script src="/static/js/lib/angular.js"></script>
+    <script src="/static/js/lib/angular-route.js"></script>
+    <script src="/static/js/lib/angular-sanitize.js"></script>
+    <script src="/static/js/lib/angular-animate.js"></script>
+    <script src="/static/js/lib/angular-touch.js"></script>
+    <script src="/static/js/lib/angular-cookies.js"></script>
+    <script src="/static/js/app/app.js"></script>
+    <script src="/static/js/app/controllers.js"></script>
+    <script src="/static/js/app/directives.js"></script>
+    <script src="/static/js/app/filters.js"></script>
+    <script src="/static/js/app/services.js"></script>
 </body>
 </html>
