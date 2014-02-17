@@ -5,8 +5,19 @@
 
     angular.module('myTodo.controllers', [])
 
-        .controller('frameCtrl', ['$scope', function ($scope) {
-            $scope.today = new Date();
+        .controller('appCtrl', ['$rootScope', 'header', 'footer',
+            function ($rootScope, header, footer) {
+                $rootScope.header = header;
+                $rootScope.footer = footer;
+            }
+        ])
+
+        .controller('headerCtrl', [function () {
+            angular.noop();
+        }])
+
+        .controller('footerCtrl', ['$scope', function ($scope) {
+            $scope.today = Date();
         }])
 
         .controller('todoListCtrl', [
