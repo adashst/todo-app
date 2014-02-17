@@ -1,10 +1,13 @@
 <div id="todos">
-    <input ng-model="newtodo">
-    <button name="submit" ng-click="addTodo()" class="submit"><span>insert</span></button>
-    <button name="submit" ng-click="clearStorage()" class="reset"><span>reset storage</span></button>
+    <div class="well">
+        <input ng-model="newtodo">
+        <button name="submit" ng-click="addTodo()" class="submit"><span>insert</span></button>
+        <button name="submit" ng-click="clearStorage()" class="reset"><span>reset storage</span></button>
+    </div>
+    <br>
     <ul class="list list-unstyled">
         <li ng-repeat="todo in todos | filter: newtodo" ng-switch on="todo.status" class="unstyled well">
-            <div>{{todo.createDate | filter:date}}</div>
+            <date>Created at: {{todo.createDate | date:'medium'}}</date>
             <h2><a href="#/todos/{{todo.key}}" class="detail">{{todo.key}}</a></h2>
             <button ng-switch-default ng-click="doneTodo(todo.key)" class="alert alert-info show"></button>
             <span ng-switch-when="done">

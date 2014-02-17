@@ -7,6 +7,7 @@
 
         beforeEach(function () {
             module('myTodo.controllers');
+            module('myTodo.services');
         });
 
         var scope;
@@ -17,12 +18,55 @@
             }
         ));
 
-        describe('frameController', function () {
-            it('should define today date', inject(
+        describe('applicationController', function () {
+            
+            beforeEach(inject(
+                function ($controller, $rootScope) {
+                    $controller('appCtrl', {
+                        $scope: $rootScope
+                    });
+                }
+            ));
+
+            it('should define a header object', function () {
+                expect(scope.header).toBeDefined();
+            });
+
+            it('should define a footer object', function () {
+                expect(scope.footer).toBeDefined();
+            });
+
+        });
+
+        describe('headerController', function () {
+
+            beforeEach(inject(
                 function ($controller) {
-                    $controller('frameCtrl', {
+                    $controller('headerCtrl', {
                         $scope: scope
                     });
+                }
+            ));
+
+            it('should do nothing', inject(
+                function () {
+                    angular.noop();
+                }
+            ));
+        });
+
+        describe('footerController', function () {
+
+            beforeEach(inject(
+                function ($controller) {
+                    $controller('footerCtrl', {
+                        $scope: scope
+                    });
+                }
+            ));
+
+            it('should define a date', inject(
+                function () {
                     expect(scope.today).toBeDefined();
                 }
             ));

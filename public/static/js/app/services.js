@@ -3,10 +3,22 @@
 (function () {
     'use strict';
 
-    /* Services */
-
-    // Demonstrate how to register services
-    // In this case it is a simple value service.
     angular.module('myTodo.services', [])
-        .value('version', '0.0.1');
+        
+        .value('version', '0.0.2')
+        
+        .factory('header', function () {
+            var header = function () {
+                return '/static/templates/header.html';
+            };
+            return header;
+        })
+
+        .factory('footer', function () {
+            var footer = function () {
+                return '/static/templates/footer.html';
+            };
+            return footer;
+        });
+
 }());
